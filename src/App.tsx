@@ -1,12 +1,13 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import { BrowserRouter } from "react-router-dom";
+import Layout from "./components/Layout.tsx";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello Everyone</h1>
-        <Button>Click me</Button>
-      </div>
+      <BrowserRouter>
+        <Layout>Hello</Layout>
+      </BrowserRouter>
     </>
   );
 }
